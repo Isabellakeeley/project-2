@@ -8,6 +8,7 @@
     --text-color: hsl(0, 0%, 100%);
   }
   body {
+    height: 100vh;
     margin: 0px
 
   }
@@ -46,17 +47,19 @@ body {
   display: flex;
   align-items: center;
   min-height: 100vh;
-  font-family: Arial, Helvetica, sans-serif
+  font-family: 'Trispace', sans-serif;
   background-color; rgb(0, 0, 0);
 }
 .text--glitch {
   margin: 0;
+  font-family: 'Trispace', sans-serif;s
   color: white;
   font-size: 6rem;
   font-weight: 700;
   position: relative;
   letter-spacing: .025em;
   text-transform: uppercase;
+
   
   text-shadow: .05em 0 0 rgba(255, 0, 0, .75),
               -.05em -.025em 0 rgba(0, 255, 0, .75),
@@ -176,4 +179,20 @@ h1 {
   0% {background-position: 0 0}
   0% {background-position: 100% -100%}
   }
-
+/* Icon Up */
+@-webkit-keyframes hvr-icon-up {
+  0%,
+	50%,
+	100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  25%,
+	75% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+}
+.roller-coaster{
+  width: 100%;
+}
