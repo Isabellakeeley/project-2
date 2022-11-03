@@ -16,7 +16,7 @@
     display: grid;
     place-content: center;
     min-height: 100vh;
-    font-family: "Oswald", sans-serif;
+    font-family: 'Trispace', sans-serif;
     font-size: clamp(1.5rem, 1rem + 18vw, 15rem);
     font-weight: 700;
     text-transform: uppercase;
@@ -48,11 +48,11 @@ body {
   align-items: center;
   min-height: 100vh;
   font-family: 'Trispace', sans-serif;
-  background-color; rgb(0, 0, 0);
+  background-color; border-block-start-color: rgb(0, 0, 0);
 }
 .text--glitch {
   margin: 0;
-  font-family: 'Trispace', sans-serif;s
+  font-family: 'Trispace', sans-serif;
   color: white;
   font-size: 6rem;
   font-weight: 700;
@@ -179,20 +179,50 @@ h1 {
   0% {background-position: 0 0}
   0% {background-position: 100% -100%}
   }
-/* Icon Up */
-@-webkit-keyframes hvr-icon-up {
-  0%,
-	50%,
-	100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  25%,
-	75% {
-    -webkit-transform: translateY(-6px);
-    transform: translateY(-6px);
-  }
+
+.hvr-radial-out {
+  padding-left: 80px;
+  padding-right: 80px;
+  font-family: "Oswald", sans-serif;
+  display: inline-block;
+  font-size: xxx-large; 
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  background: #e1e1e1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
-.roller-coaster{
-  width: 100%;
+.hvr-radial-out:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: hsla(230,40%,50%,1);
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-radial-out:hover, .hvr-radial-out:focus, .hvr-radial-out:active {
+  color: white
+
+}
+.hvr-radial-out:hover:before, .hvr-radial-out:focus:before, .hvr-radial-out:active:before {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+  
 }
