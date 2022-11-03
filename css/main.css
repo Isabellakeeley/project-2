@@ -184,6 +184,7 @@ h1 {
   padding-left: 80px;
   padding-right: 80px;
   font-family: "Oswald", sans-serif;
+  color: hsla(230,40%,50%,1);;
   display: inline-block;
   font-size: xxx-large; 
   vertical-align: middle;
