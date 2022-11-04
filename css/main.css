@@ -47,7 +47,6 @@ body {
   display: flex;
   align-items: center;
   min-height: 100vh;
-  font-family: 'Trispace', sans-serif;
   background-color; border-block-start-color: rgb(0, 0, 0);
 }
 .text--glitch {
