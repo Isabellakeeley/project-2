@@ -51,7 +51,7 @@ body {
 }
 .text--glitch {
   margin: 0;
-  font-family: 'Trispace', sans-serif;
+  font-family: 'Oswald', sans-serif;
   color: white;
   font-size: 6rem;
   font-weight: 700;
@@ -182,7 +182,9 @@ h1 {
 .hvr-radial-out {
   padding-left: 80px;
   padding-right: 80px;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Trispace', sans-serif;
+  font-weight: 700;
+  font-size: xx-large;
   color: hsla(230,40%,50%,1);;
   display: inline-block;
   font-size: xxx-large; 
